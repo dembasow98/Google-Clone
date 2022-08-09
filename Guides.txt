@@ -1,3 +1,9 @@
 1)Fix - yarn.ps1 cannot be loaded because running scripts is disabled on this system:
 Open Powershell as admin and type the following command:
 >Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+2)Fix -Attempted to load @next/swc-win32-x64-gnu, but it was not installed:
+Delete the package-lock.json file and the node_modules directory in your project 
+and then run npm install on your terminal.
+3)Install heroicons:
+npm install/ yarn add @heroicons/react
