@@ -29,7 +29,24 @@ export default function Home() {
         </div>
       </header>
       {/**Body */}
-     
+      <form className='flex flex-col items-center mt-40 flex-grow'>
+        <Image 
+        src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
+        height={100}
+        width = {300}
+        />
+        <div className='flex w-full mt-5 hover:shadow-lg  focus-within:shadow-lg max-w-md
+        rounded-full border border-gray-200 px-2 py-1 items-center sm:max-w-xl lg:max-w-2xl'>
+          <SearchIcon className='h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer'/>
+          <input type="text" placeholder="Search" className='w-full p-2 rounded-full focus:outline-none'/>
+          <MicrophoneIcon className='h-10 w-10 p-2 rounded-full hover:bg-gray-100 cursor-pointer'/>
+        </div>
+        <div className='flex w-1/2 flex-col space-y-2 justify-center mt-6 sm:space-y-0 sm:flex-row sm:space-x-4'>
+          <button className='btn'>Google Search</button>
+          <button className='btn'>I'm Feeling Lucky</button>
+        </div>
+       
+      </form>
       {/**Footer */}
     
     </div>
