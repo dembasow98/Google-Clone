@@ -6,4 +6,5 @@ Open Powershell as admin and type the following command:
 Delete the package-lock.json file and the node_modules directory in your project 
 and then run npm install on your terminal.
 3)Install heroicons:
-npm install/ yarn add @heroicons/react
+npm install/ yarn add @heroicons/
+4)/**width={20} height={20}= className="h-7" */
