@@ -3,10 +3,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Avatar from '../components/Avatar'
 import { MicrophoneIcon, SearchIcon, ViewGridIcon } from '@heroicons/react/solid'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
-    <div className={styles.container} >
+    <div className="flex flex-col items-center justify-center h-screen" >
       <Head>
         <title>Google Clone</title>
         <link rel="icon" href="/favicon.ico" />
@@ -29,7 +30,7 @@ export default function Home() {
         </div>
       </header>
       {/**Body */}
-      <form className='flex flex-col items-center mt-40 flex-grow'>
+      <form className='flex flex-col items-center mt-35 flex-grow w-4/5'>
         <Image 
         src="https://wikiimg.tojsiabtv.com/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1200px-Google_2015_logo.svg.png"
         height={100}
@@ -45,10 +46,14 @@ export default function Home() {
           <button className='btn'>Google Search</button>
           <button className='btn'>I'm Feeling Lucky</button>
         </div>
+        <div>
+          <p className='text-center text-gray-500 text-sm mt-4'>Google offered in: <span className='text-blue-800 hover:underline cursor-pointer'>Türkçe</span></p>
+        </div>
        
       </form>
       {/**Footer */}
-    
+  
+      <Footer/>
     </div>
   )
 }

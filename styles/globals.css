@@ -10,4 +10,8 @@
   .btn{
     @apply bg-[#f8f9fa] rounded-md text-gray-800 text-sm ring-gray-200 p-2 hover:ring-1 hover:shadow-md active:ring-gray-300 ;
   }
+
+  .footer-tag{
+    @apply hover:underline cursor-pointer;
+  }
 }
