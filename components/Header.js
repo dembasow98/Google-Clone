@@ -22,17 +22,19 @@ export default function Header(){
         if(!term){ //If the search input is empty, return
             return;
         }
-
         //Pushing the search page with the search term as a 
         router.push(`/search?term=${term}`);
 
         //Use google search API to search for the term
         //fetch(`https://www.googleapis.com/customsearch/v1?key=${process.env.GOOGLE_API_KEY}&cx=${process.env.GOOGLE_CSE_ID}&q=${term}`)
     
+    
     }
 
     
-    return <header className='sticky bg-white top-0 '>
+
+    
+    return <header className='sticky bg-white top-0'>
            <div className='flex w-full p-6 items-center'>
                 <Image
                     className = "cursor-pointer"
@@ -66,6 +68,8 @@ export default function Header(){
                 </div>
            </div>
            {/**HeaderOptions */}
+
+
            <HeaderOptions/>
         </header>;
     }

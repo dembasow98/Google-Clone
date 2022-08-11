@@ -8,3 +8,28 @@ and then run npm install on your terminal.
 3)Install heroicons:
 npm install/ yarn add @heroicons/
 4)/**width={20} height={20}= className="h-7" */
+
+5)Use .env files in react:
+
+npm install dotenv --save
+*Next add the following line to your app.
+require('dotenv').config()
+
+*Then create a .env file at the root directory of your application and add the variables to it.
+
+    // contents of .env 
+
+    REACT_APP_API_KEY = 'my-secret-api-key'
+*Finally, add .env to your .gitignore file so that Git ignores it and it never ends up on GitHub.
+If you are using create-react-app then you only need step 3 and 4 but keep in mind variable needs to start with REACT_APP_ 
+or it to work.
+
+Reference: https://create-react-app.dev/docs/adding-custom-environment-variables/
+
+NOTE - Need to restart application after adding variable in .env file.
+
+Reference - https://medium.com/@thejasonfile/using-dotenv-package-to-create-environment-variables-33da4ac4ea8f
+
+
+6).env error/API KEYs Error:
+Add the prefix: REACT_APP_ to each API and it'll work.
