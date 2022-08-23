@@ -5,6 +5,7 @@ import Response from '../Response';
 import { useRouter } from 'next/router';
 
 import SearchResults from '../components/SearchResults';
+import PaginationButtons from '../components/PaginationButtons';
 
 export default function Search({results}){
 
@@ -22,6 +23,9 @@ export default function Search({results}){
             <Header />
             {/**Search Result */}
             <SearchResults results={results} />
+            {/**Pagination Buttons */}
+            <PaginationButtons/>
+            {/**Footer */}
 
         </div>;
         
