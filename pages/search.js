@@ -21,7 +21,7 @@ export default function Search({results}){
             {/**Header */}
             <Header />
             {/**Search Result */}
-            
+            <SearchResults results={results} />
 
         </div>;
         
